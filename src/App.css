@@ -1,0 +1,105 @@
+/* General app styling */
+.App {
+  text-align: center;
+  padding: 40px;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f2f2f2;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styling for question and result container */
+.question-container, .result-container {
+  max-width: 600px;
+  width: 100%;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  margin: 20px auto;
+}
+
+/* Header styling */
+h1 {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+/* Question styling */
+.question-container h2 {
+  font-size: 1.6em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Answer option buttons */
+.option-btn {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  font-size: 1.1em;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.option-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Result container styling */
+.result-container h2 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.result-container p {
+  font-size: 1.3em;
+  color: #333;
+}
+
+/* Button styles for result screen */
+.result-btn {
+  padding: 12px 25px;
+  font-size: 1.1em;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.result-btn:hover {
+  background-color: #218838;
+}
+
+/* Additional responsive design */
+@media (max-width: 600px) {
+  .App {
+    padding: 20px;
+  }
+
+  .question-container, .result-container {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  .option-btn {
+    font-size: 1em;
+  }
+}
